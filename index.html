@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerakan Mulai Membaca | Jendela Duniaku</title>
+  <meta name="description" content="Gerakan Mulai Membaca — Jendela Duniaku. PDF versi web yang dapat di-scroll." />
+  <style>
+    :root {
+      --bg: #efefef;
+      --card: #ffffff;
+      --text: #403944;
+      --accent: #f4d400;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,.85);
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .topbar-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .brand {
+      font-weight: 700;
+      letter-spacing: .2px;
+      font-size: 14px;
+    }
+    .actions { display:flex; gap:10px; flex-wrap:wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 14px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid rgba(0,0,0,.12);
+      color: var(--text);
+      background: #fff;
+    }
+    .btn.primary { background: var(--accent); }
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 20px 12px 48px;
+    }
+    .page {
+      margin: 0 auto 18px;
+      background: var(--card);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08);
+    }
+    .page img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .footer-note {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 16px 24px;
+      color: #6a6470;
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .topbar-inner { align-items:flex-start; flex-direction:column; }
+      .btn { width: 100%; }
+      .actions { width:100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Gerakan Mulai Membaca • Jendela Duniaku</div>
+      <div class="actions">
+        <a class="btn primary" href="#page-2">Mulai baca</a>
+        <a class="btn" href="#page-9">Halaman akhir</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap">
+      <section class="page" id="page-1">
+        <img src="assets/page-01.jpg" alt="Gerakan Mulai Membaca page 1" loading="eager">
+      </section>
+      <section class="page" id="page-2">
+        <img src="assets/page-02.jpg" alt="Gerakan Mulai Membaca page 2" loading="eager">
+      </section>
+      <section class="page" id="page-3">
+        <img src="assets/page-03.jpg" alt="Gerakan Mulai Membaca page 3" loading="lazy">
+      </section>
+      <section class="page" id="page-4">
+        <img src="assets/page-04.jpg" alt="Gerakan Mulai Membaca page 4" loading="lazy">
+      </section>
+      <section class="page" id="page-5">
+        <img src="assets/page-05.jpg" alt="Gerakan Mulai Membaca page 5" loading="lazy">
+      </section>
+      <section class="page" id="page-6">
+        <img src="assets/page-06.jpg" alt="Gerakan Mulai Membaca page 6" loading="lazy">
+      </section>
+      <section class="page" id="page-7">
+        <img src="assets/page-07.jpg" alt="Gerakan Mulai Membaca page 7" loading="lazy">
+      </section>
+      <section class="page" id="page-8">
+        <img src="assets/page-08.jpg" alt="Gerakan Mulai Membaca page 8" loading="lazy">
+      </section>
+      <section class="page" id="page-9">
+        <img src="assets/page-09.jpg" alt="Gerakan Mulai Membaca page 9" loading="lazy">
+      </section>
+  </main>
+
+  <div class="footer-note">
+    Website ini menampilkan brief Gerakan Mulai Membaca dalam format web-scroll agar mudah dibaca di desktop maupun ponsel.
+  </div>
+</body>
+</html>
